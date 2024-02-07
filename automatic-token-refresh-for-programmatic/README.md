@@ -57,7 +57,7 @@ Click confirm and continue.
 ![Give botocore access](./image-assets/07-allow-botocore.png)
 ![Botocore success](./image-assets/08-botocore-success.png)
 
-## Step 4: Configure a Profile
+## Step 3: Configure a Profile
 
 The profile exists at the individual AWS account level - you should use a profile name that references the specific AWS account you will be working in.
 
@@ -67,7 +67,7 @@ The profile exists at the individual AWS account level - you should use a profil
 
 As you run the `aws configure sso` command, you are configuring the `~/.aws/config` file. You can also set up sessions and profiles by editing this config file.
 
-## Step 5: Create Profiles for Each Account
+## Step 4: Create Profiles for Each Account
 
 You need to configure each account in your identity center seperately, the profile will not exist until you create it.
 
@@ -83,12 +83,12 @@ You can run `aws configure list-profiles` to see all the profiles you have confi
 
 You can also refer to the `~/.aws/config` file to see all profiles and SSO sessions.
 
-## Step 4: Using Profiles
+## Step 5: Using Profiles
 
 With the profiles configured, use the `--profile` flag to target commands against different AWS accounts. You do not need any credentials stored locally and it is easy to switch betwix different accounts 🙌.
 ![Running commands against different accounts with the profile flag](./image-assets/16-user-profile-flag.png)
 
-## Step 5: SSO Session Duration
+## Step 6: SSO Session Duration
 
 When you configure a profile, you select an AWS account and then a role. (In the example above there was only one role available - the _AdminsitratorAccess_ role). The role is associated with a permission set in your IAM Identity Center. You may recall from Identity Center set up that Identity Center permission sets have a configurable duration setting.
 
@@ -96,7 +96,7 @@ If you own the Identity Center you are using to create sessions (or are an admin
 
 ![Configure session duration](./image-assets/17-session-duration.png)
 
-## Step 6: SSO Session Login
+## Step 7: SSO Session Login
 
 When your session does expire, you can run `aws sso login` to reauthenticate. You can use the `--sso-session` or `--profile` flags.
 
