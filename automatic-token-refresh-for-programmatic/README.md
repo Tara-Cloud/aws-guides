@@ -115,3 +115,4 @@ This command deletes cached temporary credentials that live in the `~/.aws/sso/c
 - https://docs.aws.amazon.com/singlesignon/latest/OIDCAPIReference/Welcome.html
 - https://aws.amazon.com/blogs/security/define-a-custom-session-duration-and-terminate-active-sessions-in-iam-identity-center/
 - https://www.rhythmictech.com/blog/iam-access-keys-bad-aws-sso-good/ <---- Excellent walk through on the subject
+- https://www.reddit.com/r/aws/comments/zk456d/new_aws_cli_and_sso_sessions_profiles_and_legacy/ <---- Excellent reddit post on the subject
